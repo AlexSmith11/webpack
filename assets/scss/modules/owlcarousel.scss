@@ -1,0 +1,13 @@
+@import '~owl.carousel/dist/assets/owl.carousel.css';
+
+.owl-carousel:not(.owl-loaded) {
+  display: block;
+
+  & > * {
+    display: none;
+  }
+
+  & .item:first-of-type {
+    display: block;
+  }
+}

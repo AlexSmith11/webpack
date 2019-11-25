@@ -1,0 +1,96 @@
+$fa-font-path: '~@fortawesome/fontawesome-pro/webfonts';
+
+@import '~@fortawesome/fontawesome-pro/scss/variables';
+@import '~@fortawesome/fontawesome-pro/scss/mixins';
+@import '~@fortawesome/fontawesome-pro/scss/core';
+@import '~@fortawesome/fontawesome-pro/scss/larger';
+@import '~@fortawesome/fontawesome-pro/scss/fixed-width';
+@import '~@fortawesome/fontawesome-pro/scss/list';
+@import '~@fortawesome/fontawesome-pro/scss/bordered-pulled';
+@import '~@fortawesome/fontawesome-pro/scss/animated';
+@import '~@fortawesome/fontawesome-pro/scss/rotated-flipped';
+@import '~@fortawesome/fontawesome-pro/scss/stacked';
+@import './fontawesome/icons';
+@import './fontawesome/all-icons';
+@import '~@fortawesome/fontawesome-pro/scss/screen-reader';
+
+
+// Regular
+@mixin fontawesome-regular {
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: $fa-font-display;
+    src: url('#{$fa-font-path}/fa-regular-400.eot');
+    src: url('#{$fa-font-path}/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+    url('#{$fa-font-path}/fa-regular-400.woff2') format('woff2'),
+    url('#{$fa-font-path}/fa-regular-400.woff') format('woff'),
+    url('#{$fa-font-path}/fa-regular-400.ttf') format('truetype');
+  }
+
+  .far {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+  }
+}
+
+// Solid
+@mixin fontawesome-solid {
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-display: $fa-font-display;
+    src: url('#{$fa-font-path}/fa-solid-900.eot');
+    src: url('#{$fa-font-path}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+    url('#{$fa-font-path}/fa-solid-900.woff2') format('woff2'),
+    url('#{$fa-font-path}/fa-solid-900.woff') format('woff'),
+    url('#{$fa-font-path}/fa-solid-900.ttf') format('truetype');
+  }
+
+  .fa,
+  .fas {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+  }
+}
+
+// Light
+@mixin fontawesome-light {
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-display: $fa-font-display;
+    src: url('#{$fa-font-path}/fa-light-300.eot');
+    src: url('#{$fa-font-path}/fa-light-300.eot?#iefix') format('embedded-opentype'),
+    url('#{$fa-font-path}/fa-light-300.woff2') format('woff2'),
+    url('#{$fa-font-path}/fa-light-300.woff') format('woff'),
+    url('#{$fa-font-path}/fa-light-300.ttf') format('truetype');
+  }
+
+  .fal {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300;
+  }
+}
+
+// Brands
+@mixin fontawesome-brands {
+  @font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-display: $fa-font-display;
+    src: url('#{$fa-font-path}/fa-brands-400.eot');
+    src: url('#{$fa-font-path}/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url('#{$fa-font-path}/fa-brands-400.woff2') format('woff2'),
+    url('#{$fa-font-path}/fa-brands-400.woff') format('woff'),
+    url('#{$fa-font-path}/fa-brands-400.ttf') format('truetype');
+  }
+
+  .fab {
+    font-family: 'Font Awesome 5 Pro';
+  }
+}

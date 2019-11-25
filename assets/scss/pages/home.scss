@@ -1,0 +1,20 @@
+@import '../modules/foundation';
+@import '../modules/fontawesome';
+@import '../modules/owlcarousel';
+@import '../modules/aos';
+
+@include fontawesome-light;
+@include fontawesome-brands;
+
+@include foundation-accordion;
+@include foundation-tabs;
+
+@include fontawesome-icon-users;
+@include fontawesome-icon-facebook-f;
+@include fontawesome-icon-linkedin-in;
+
+.block {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+}
